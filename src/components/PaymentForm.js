@@ -2,6 +2,7 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
 import axios from "axios"
 import React, { useState } from 'react'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import '../styles/PaymentForm.css';
 
 
 const CARD_OPTIONS = {
@@ -11,7 +12,7 @@ const CARD_OPTIONS = {
 			iconColor: "#c4f0ff",
 			color: "#808080",
 			fontWeight: 500,
-			fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+			fontFamily: "sans-serif",
 			fontSize: "16px",
 			fontSmoothing: "antialiased",
 			":-webkit-autofill": { color: "#000" },
@@ -71,12 +72,12 @@ export default function PaymentForm() {
             <button className="btn btn-outline-dark mb-5 w-25 mx-auto">Pay</button>
         </form>
         :
-       <div>
-           <h2 style={{fontSize: '60px', textAlign: 'center'}}>Payment Successful Thank You</h2>
-           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <CheckCircleIcon style={{color: 'green', width: '100px', height: '100px'}} />
-            </div>
-       </div> 
+        <div>
+        <h2 style={{fontSize: '60px', textAlign: 'center'}}>Payment Successful Thank You</h2>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+         <CheckCircleIcon style={{color: 'green', width: '100px', height: '100px'}} />
+         </div>
+    </div> 
         }
             
         </>

@@ -5,8 +5,6 @@ import '../styles/Navbar.css';
 import Badge from '@mui/material/Badge';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import { styled } from '@mui/material/styles';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import {useNavigate} from 'react-router-dom'
 import CartBtn from '../buttons/CartBtn';
 
 
